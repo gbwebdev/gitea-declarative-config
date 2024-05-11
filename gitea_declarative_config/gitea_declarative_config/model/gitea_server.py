@@ -67,6 +67,11 @@ class GiteaServer(metaclass=SingletonMeta):
     
     @raw_url.setter
     def raw_url(self, raw_url: str):
+        """raw_url
+
+        Args:
+            raw_url (str): raw_url
+        """
         self._raw_url = raw_url
         self._set_urls()
 
